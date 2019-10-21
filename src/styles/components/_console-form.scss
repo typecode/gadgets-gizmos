@@ -1,0 +1,13 @@
+.console-form {
+  display: flex;
+
+  &__input {
+    border: 1px solid;
+    flex-grow: 1;
+    padding: 4px;
+
+    &:focus {
+      border-color: $color-widget-focus;
+    }
+  }
+}

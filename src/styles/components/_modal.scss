@@ -1,0 +1,39 @@
+.modal {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9;
+
+  &__panel {
+    background-color: $color-bg;
+    max-width: 800px;
+  }
+
+  &__panel-hd {
+    padding: 1rem;
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  &__panel-bd {
+    border-top: 1px solid $color-widget-border;
+    padding: 1rem;
+  }
+
+  &--open {
+    display: flex;
+  }
+}
+
+html.modal-is-open {
+  overflow: hidden;
+}

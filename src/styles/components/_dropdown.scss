@@ -1,0 +1,33 @@
+.dropdown {
+  position: relative;
+
+  &__controlbar {
+    align-items: center;
+    background-color: $color-widget;
+    border: 1px solid;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+
+    .dropdown--focussed & {
+      border-color: $color-widget-focus;
+    }
+  }
+
+  &__arrow {
+    user-select: none;
+    transition: transform 0.3s ease-out;
+
+    .dropdown--open & {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__menu {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+  }
+}

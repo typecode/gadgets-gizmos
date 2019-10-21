@@ -1,0 +1,20 @@
+.button {
+  background-color: $color-widget;
+  border: 1px solid $color-widget-border;
+  display: inline-flex;
+  user-select: none;
+  padding: 4px 8px;
+
+  &:hover {
+    background-color: $color-widget-hover;
+  }
+
+  &:active {
+    background-color: $color-widget-active;
+  }
+
+  &:focus {
+    border-color: $color-widget-focus;
+  }
+}
+

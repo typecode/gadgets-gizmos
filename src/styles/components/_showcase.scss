@@ -1,0 +1,23 @@
+.showcase {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 1rem;
+
+  &__item {
+    outline: 1px solid $color-widget;
+    background-color: $color-bg-light;
+    flex-basis: 25%;
+    padding: 1rem;
+  }
+
+  &__item-hd {
+    h2 {
+      text-align: center;
+    }
+  }
+
+  &__item-bd {
+    margin: 0.5rem 0 0;
+  }
+}
+

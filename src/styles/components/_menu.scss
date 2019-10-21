@@ -1,0 +1,35 @@
+.menu {
+  border: 1px solid $color-widget-border-light;
+  display: none;
+
+  &__item {
+    border-top: 1px solid $color-widget-border-light;
+    cursor: pointer;
+    padding: 4px;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &--highlighted {
+      background-color: $color-widget-hover;
+    }
+
+    &:active {
+      background-color: $color-widget-active;
+    }
+  }
+
+  &--open {
+    display: block;
+  }
+
+  &--standalone {
+    display: block;
+    margin: 0 0 1rem;
+
+    &:focus {
+      border-color: $color-widget-focus;
+    }
+  }
+}

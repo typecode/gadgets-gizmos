@@ -1,0 +1,31 @@
+.taglist {
+  $spacing: 4px;
+
+  display: flex;
+  flex-flow: row wrap;
+  margin: $spacing (-1 * $spacing) 0;
+
+  &__tag {
+    border: 1px solid;
+    display: flex;
+    margin: $spacing $spacing 0;
+  }
+
+  &__tag-label {
+    padding: 4px;
+  }
+
+  &__tag-close {
+    cursor: pointer;
+    user-select: none;
+    padding: 4px;
+
+    &:hover {
+      background-color: $color-widget-hover;
+    }
+
+    &:active {
+      background-color: $color-widget-active;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo Gadgets &amp; Gizmos</title>
+</head>
+<body>
+  <div class='app'>
+    <header class='app__hd'>
+      <h1>Demo Gadgets &amp; Gizmos</h1>
+    </header>
+    <main class='app__bd'>
+      <div class='showcase'>
+        <div class='showcase__item'>
+          <div class='showcase__item-hd'>
+            <h2>Buttons</h2>
+          </div>
+          <div class='showcase__item-bd'>
+            <div class='toolbar'>
+              <button class='button toolbar__item' tabindex='0' id='demo-button-1'>Open all gadgets</button>
+              <button class='button toolbar__item' tabindex='0' id='demo-button-2'>Close all gadgets</button>
+              <button class='button toolbar__item' tabindex='0' id='demo-button-3'>Open Modal</button>
+            </div>
+          </div>
+        </div>
+        <div class='showcase__item'>
+          <div class='showcase__item-hd'>
+            <h2>Gadgets</h2>
+          </div>
+          <div class='showcase__item-bd'>
+            <div class='gadget' id='demo-gadget-1'>
+              <div class='gadget__hd'>
+                <h3>Gadget Header</h3>
+                <div class='gadget__tools'>
+                  <button class='button gadget__toggle'></button>
+                </div>
+              </div>
+              <div class='gadget__bd'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi ipsum faucibus vitae aliquet nec. Morbi non arcu risus quis varius quam quisque id diam. Nec feugiat nisl pretium fusce id velit ut. Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. Fermentum dui faucibus in ornare quam viverra orci sagittis eu. Morbi non arcu risus quis varius quam. Id velit ut tortor pretium viverra suspendisse potenti. Massa tincidunt dui ut ornare lectus sit. Urna neque viverra justo nec ultrices dui sapien. Eu scelerisque felis imperdiet proin fermentum leo vel. Molestie ac feugiat sed lectus. Felis eget velit aliquet sagittis id. Adipiscing elit ut aliquam purus sit amet. Enim blandit volutpat maecenas volutpat. Eu augue ut lectus arcu bibendum.</p>
+              </div>
+            </div>
+             <div class='gadget' id='demo-gadget-2'>
+              <div class='gadget__hd'>
+                <h3>Another Gadget</h3>
+                <div class='gadget__tools'>
+                  <button class='button gadget__toggle'></button>
+                </div>
+              </div>
+              <div class='gadget__bd'>
+                <p>This is a second, independent gadget.</p>
+              </div>
+            </div>
+            <div class='gadget' id='demo-gadget-3'>
+              <div class='gadget__hd'>
+                <h3>Gadget with image</h3>
+                <div class='gadget__tools'>
+                  <button class='button gadget__toggle'></button>
+                </div>
+              </div>
+              <div class='gadget__bd'>
+                <img src='public/sawyer.jpg' alt='Photo of Sawyer'> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='showcase__item'>
+          <div class='showcase__item-hd'>
+            <h2>Menus &amp; Dropdowns</h2>
+          </div>
+          <div class='showcase__item-bd'>
+            <div class='menu menu--standalone' tabindex='0' id='demo-standalone-menu'>
+              <ul class='menu__list'>
+                <li class='menu__item' data-value='apples'>Apples</li>
+                <li class='menu__item' data-value='oranges'>Oranges</li>
+                <li class='menu__item' data-value='pears'>Pears</li>
+                <li class='menu__item' data-value='cherries'>Cherries</li>
+              </ul>
+            </div>
+            <div class='dropdown' tabindex='0' id='demo-dropdown'>
+              <div class='dropdown__controlbar'>
+                <div class='dropdown__display'></div>
+                <div class='dropdown__arrow'>&#9660;</div>
+              </div>
+              <div class='menu dropdown__menu'>
+                <ul class='menu__list'>
+                  <li class='menu__item' data-value='alpha' data-label='Alphabetical (default)'>Alphabetical</li>
+                  <li class='menu__item' data-value='color'>By Color</li>
+                  <li class='menu__item' data-value='peak-week'>Peak Week</li>
+                </ul>
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class='showcase__item'>
+          <div class='showcase__item-hd'>
+            <h2>Tag List Console</h2>
+          </div>
+          <div class='showcase__item-bd'>
+            <div id='demo-taglist-console'>
+              <form class='console-form'>
+                <input class='console-form__input' type='text' placeholder='Comma-seperated tags' value='New York, California, Virginia'>
+                <button class='button console-form__button' type='submit' tabindex='0'>Add Tags</button>
+              </form>
+              <div class='taglist'></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class='modal' tabindex='0' id='demo-modal'>
+          <div class='modal__panel'>
+            <div class='modal__panel-hd'>
+              <h2>Modal</h2>
+            </div>
+            <div class='modal__panel-bd'>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

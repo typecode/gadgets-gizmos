@@ -1,0 +1,25 @@
+.gadget {
+  border: 1px solid;
+  margin: 1rem 0 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &__hd {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  &__bd {
+    border-top: 1px solid $color-widget-border;
+    display: none;
+    padding: 1rem;
+
+    .gadget--open & {
+      display: block;
+    }
+  }
+}

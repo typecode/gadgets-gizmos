@@ -1,0 +1,79 @@
+* {
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+html,
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+article,
+aside,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+img,
+svg {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input {
+    size: 1;
+
+    &::-ms-clear {
+        display: none;
+    }
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid;
+    height: 0;
+}
+
+abbr {
+    text-decoration: none;
+}
